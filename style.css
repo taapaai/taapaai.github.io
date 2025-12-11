@@ -19,26 +19,40 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 
 .navbar {
     transition: all 0.3s ease;
-}
-
-.navbar-scrolled {
     background-color: rgba(255, 255, 255, 0.95);
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
+.navbar-scrolled {
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
 .hero {
     position: relative;
-    height: 80vh;
-    min-height: 500px;
-    background-image: url('https://placehold.co/1920x1080/003366/FFFFFF?text=AI+&+Knowledge+Graph');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    height: 85vh;
+    min-height: 600px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #4facfe 75%, #00f2fe 100%);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
     color: var(--light-text);
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    overflow: hidden;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .hero::before {
@@ -48,30 +62,138 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.6);
+    background: 
+        radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.2) 0%, transparent 70%);
+    opacity: 0.8;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, 0.05) 25%, rgba(255, 255, 255, 0.05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.05) 75%, rgba(255, 255, 255, 0.05) 76%, transparent 77%, transparent),
+        linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, 0.05) 25%, rgba(255, 255, 255, 0.05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.05) 75%, rgba(255, 255, 255, 0.05) 76%, transparent 77%, transparent);
+    background-size: 50px 50px;
+    opacity: 0.3;
+    animation: gridMove 20s linear infinite;
+}
+
+@keyframes gridMove {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(50px, 50px);
+    }
 }
 
 .hero-content {
     position: relative;
+    z-index: 2;
+    max-width: 900px;
+    padding: 0 20px;
+}
+
+.hero-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     z-index: 1;
-    max-width: 800px;
+    background-image: 
+        radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.1) 2px, transparent 2px),
+        radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.1) 2px, transparent 2px);
+    background-size: 100px 100px, 150px 150px;
+    background-position: 0 0, 50px 50px;
+    opacity: 0.4;
+    animation: patternMove 30s linear infinite;
 }
 
-.hero h1 {
-    font-size: 3.5rem;
+@keyframes patternMove {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(100px, 100px);
+    }
+}
+
+.hero-badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hero-badge i {
+    margin-right: 8px;
+    font-size: 1.1rem;
+}
+
+.hero-title {
+    font-size: 3.2rem;
     font-weight: 700;
+    line-height: 1.2;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #ffffff 0%, #e0e7ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
-.hero .lead {
+.hero-subtitle {
     font-size: 1.5rem;
-}
-
-.workshop-date {
-    font-size: 1.8rem;
     font-weight: 600;
     color: #ffd700;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    letter-spacing: 2px;
+}
+
+.hero .lead {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.hero-link {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+    transition: all 0.3s ease;
+}
+
+.hero-link:hover {
+    color: #ffd700 !important;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.workshop-date {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #ffd700;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
     margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.workshop-date i {
+    font-size: 1.2rem;
 }
 
 .hero-actions {
@@ -93,6 +215,34 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 }
 
 @media (max-width: 768px) {
+    .hero {
+        height: 75vh;
+        min-height: 500px;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .hero .lead {
+        font-size: 1.1rem;
+    }
+    
+    .workshop-date {
+        font-size: 1.1rem;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .hero-badge {
+        font-size: 0.85rem;
+        padding: 8px 16px;
+    }
+    
     .hero-actions {
         flex-direction: column;
         align-items: center;
