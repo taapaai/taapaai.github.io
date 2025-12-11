@@ -29,6 +29,14 @@
                     <li class="nav-item"><a class="nav-link" href="#motivation">Motivation</a></li>
                     <li class="nav-item"><a class="nav-link" href="#submissions">Submissions</a></li>
                     <li class="nav-item"><a class="nav-link" href="#chairs">Organizers</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="previousEditionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Previous Editions
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="previousEditionsDropdown">
+                            <li><a class="dropdown-item" href="https://tapai-iswc25.github.io/" target="_blank">TAPAI@ISWC25</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -37,8 +45,8 @@
     <header class="hero">
         <div class="hero-content">
             <h1 class="mb-4 text-white">Trust, Autonomy and Accountability in PKG-Based Agentic AI (TAAPAAI)</h1>
-            <p class="lead mb-2">2nd Edition - Workshop at ESWC 2026</p>
-            <p class="workshop-date mb-4">Full Day Workshop</p>
+            <p class="lead mb-2">2nd Edition - Workshop at <a href="https://2026.eswc-conferences.org/" target="_blank" class="text-white">ESWC 2026</a></p>
+            <p class="workshop-date mb-4">May 10-14, 2026 | Dubrovnik, Croatia</p>
             <!-- <div class="hero-actions">
                 <a href="https://drive.google.com/drive/folders/1Rh5fHPjoyL4I880cLT5j3hJrzuhjgV6e?usp=drive_link" target="_blank" class="btn btn-primary btn-lg">
                     <i class="bi bi-folder-fill"></i> ISWC 2025 First TAPAI Workshop Resources
@@ -55,7 +63,7 @@
                         <div class="section-title text-center">
                             <h2>About the Workshop</h2>
                         </div>
-                        <p class="lead mb-5 about-lead-justified">Agentic AI systems, i.e., autonomous agents capable of planning, reasoning, and acting through tools, are rapidly shifting from labs into core enterprise and consumer products, leading to an era of operational AI. This transition significantly magnifies deep-seated concerns regarding Trust, Autonomy, and Accountability (TAA), as demonstrated by incidents ranging from internal data leaks to legal liability for misinformation. These failures underscore the urgent need for transparent, explainable, and governable agentic pipelines. Personal Knowledge Graphs (PKGs) offer a principled and verifiable solution. By modelling a user’s personal context, including policies, constraints, and data provenance, using explicit, machine-readable semantics, PKGs can operationalize TAA. They enable agents to achieve stronger alignment with user intent, provide clear, grounded explanations, and enforce accountability through traceable, auditable links between actions and inferences. The second edition of the TAPAI workshop at ESWC 2026 is designed to leverage this crucial intersection of Agentic AI, TAA, and Knowledge Graphs. We will convene Semantic Web/KG researchers, AI safety scholars, industry practitioners, and policy experts. The day will feature an engaging, outcome-oriented format, including keynote and lightning talk provocations from academia and industry, interactive panel and live polling to facilitate real-time engagement, as well as an outcome-oriented roadmapping session, where participants will co-create a vision document and manifesto for TAA issues in PKG-based agentic AI, providing a clear path forward for the community.</p>                        
+                        <p class="lead mb-5 about-lead-justified">Agentic AI systems, i.e., autonomous agents capable of planning, reasoning, and acting through tools, are rapidly shifting from labs into core enterprise and consumer products, leading to an era of operational AI. This transition significantly magnifies deep-seated concerns regarding Trust, Autonomy, and Accountability (TAA), as demonstrated by incidents ranging from internal data leaks to legal liability for misinformation. These failures underscore the urgent need for transparent, explainable, and governable agentic pipelines. Personal Knowledge Graphs (PKGs) offer a principled and verifiable solution. By modelling a user's personal context, including policies, constraints, and data provenance, using explicit, machine-readable semantics, PKGs can operationalize TAA. They enable agents to achieve stronger alignment with user intent, provide clear, grounded explanations, and enforce accountability through traceable, auditable links between actions and inferences. The second edition of the TAPAI workshop at <a href="https://2026.eswc-conferences.org/" target="_blank">ESWC 2026</a> is designed to leverage this crucial intersection of Agentic AI, TAA, and Knowledge Graphs. We will convene Semantic Web/KG researchers, AI safety scholars, industry practitioners, and policy experts. The day will feature an engaging, outcome-oriented format, including keynote and lightning talk provocations from academia and industry, interactive panel and live polling to facilitate real-time engagement, as well as an outcome-oriented roadmapping session, where participants will co-create a vision document and manifesto for TAA issues in PKG-based agentic AI, providing a clear path forward for the community.</p>                        
                         <h4 class="text-center mb-3">Key Topics</h4>
                         <ul class="topic-list text-center mb-5">
                             <li>Trust</li><li>Autonomy</li><li>Sovereignty</li><li>Accountability</li>
@@ -77,7 +85,7 @@
                         <p>Agentic AI systems—autonomous or semi-autonomous agents that can plan, reason, and act through tools and user interfaces—are rapidly moving from labs into everyday products. In the past year, major players have converged on agent-first roadmaps: OpenAI introduced <a href="https://openai.com/index/introducing-operator/">Operator</a> and followed with <a href="https://openai.com/index/introducing-chatgpt-atlas/">ChatGPT Atlas</a>, a native browser with an embedded agent mode; Salesforce launched <a href="https://www.salesforce.com/news/press-releases/2025/10/13/agentic-enterprise-announcement/">Agentforce 360</a> for enterprise-grade agent orchestration; and Google released <a href="https://deepmind.google/blog/sima-2-an-agent-that-plays-reasons-and-learns-with-you-in-virtual-3d-worlds/">SIMA 2</a>, a Gemini-powered embodied agent for interactive environments, alongside <a href="https://deepmind.google/models/gemini/">Gemini 3</a> and <a href="https://gemini.google/overview/agent/">Gemini Agent</a> that coordinate multi-step tasks across Gmail, Calendar, live browsing, and more. Together, these advances signal not just improved assistants but operational AI that executes goals on our behalf across the web and enterprise systems.</p>
                         <p>Yet this shift magnifies long-standing concerns around trust, autonomy, and accountability. Recent incidents illustrate how fragile trust can be when agents act with imperfect oversight. For example, <a href="https://techcrunch.com/2023/05/02/samsung-bans-use-of-generative-ai-tools-like-chatgpt-after-april-internal-data-leak/">Samsung's internal data leak via ChatGPT</a> sparked an enterprise ban and policy reset; an OpenAI bug exposed some users' chat titles and limited billing details; a <a href="https://www.cbc.ca/news/canada/british-columbia/air-canada-chatbot-lawsuit-1.7116416">Canadian tribunal held Air Canada liable</a> for a chatbot's misinformation; and <a href="https://www.businessinsider.com/car-dealership-chevrolet-chatbot-chatgpt-pranks-chevy-2023-12">prompt-injection exploits</a> have shown how chatbots can be manipulated to make absurd, brand-damaging commitments. These failures are not curiosities; they underscore the need for transparent knowledge grounding, verifiable provenance, and explicit user-governed policies in agentic pipelines.</p>
                         <p>Personal Knowledge Graphs (PKGs) offer a principled answer. PKGs represent a user's personal context including preferences, constraints, roles, data entitlements, and task histories as explicit, machine-readable semantics, enabling agents to: (i) align decisions with user intent; (ii) provide explanations grounded in named entities, relations, policies and provenance; and (iii) enforce accountability via traceable, signed, and auditable links between inputs, inferences, and actions. For a community centred on Knowledge Graphs and the Semantic Web, PKGs are the obvious substrate to operationalize Trust, Autonomy, and Accountability in agentic systems—turning opaque behaviours into inspectable, governable workflows, enabling technologies associated with linked data, reasoning, and provenance to enable human agency in the agent era.</p>
-                        <p>Building on the success of the <a href="https://tapai-iswc25.github.io">first edition at ISWC 2025</a> (run in a Dagstuhl-style format and attracting a focused group of ~20 researchers and practitioners), this second edition at ESWC 2026 transitions to a standard interactive workshop to broaden participation and crystallize a research agenda. We wish to examine these aspects further through the following topics:</p>
+                        <p>Building on the success of the <a href="https://tapai-iswc25.github.io">first edition at ISWC 2025</a> (run in a Dagstuhl-style format and attracting a focused group of ~20 researchers and practitioners), this second edition at <a href="https://2026.eswc-conferences.org/" target="_blank">ESWC 2026</a> transitions to a standard interactive workshop to broaden participation and crystallize a research agenda. We wish to examine these aspects further through the following topics:</p>
                         
                         <div class="row mt-5">
                              <div class="col-md-6 mb-4">
@@ -133,7 +141,7 @@
         <section id="submissions" class="section-padding">
             <div class="container">
                 <div class="section-title text-center">
-                    <h2>Call for Position Papers</h2>
+                    <h2>Call for Papers</h2>
                 </div>
                 <div class="row">
                     <div class="col-lg-8 mx-auto about-lead-justified">
@@ -141,15 +149,40 @@
                         <p class="lead">Submissions should outline your perspective, research, or relevant experience related to PKG-based agentic systems, trust mechanisms, autonomy preservation, accountability frameworks, or related topics. Accepted papers will be presented as short talks or lightning talks during the workshop.</p>
                         <div class="submission-highlight">
                             <div class="text-center">
-                                <a href="#" class="btn btn-primary btn-lg mb-3">
+                                <a href="#" class="btn btn-primary btn-lg mb-4">
                                     <i class="bi bi-file-earmark-text"></i> Submission Information Coming Soon
                                 </a>
-                                <!-- <div class="deadline-box">
-                                    <p class="deadline-text">
-                                        <span style="font-size: 0.9rem;">Call for Papers:</span>
-                                        <span class="new-deadline">Details TBA</span>
-                                    </p>
-                                </div> -->
+                                <div class="deadline-dates mt-4">
+                                    <div class="row g-3">
+                                        <div class="col-md-4">
+                                            <div class="deadline-card">
+                                                <div class="deadline-icon">
+                                                    <i class="bi bi-calendar-check"></i>
+                                                </div>
+                                                <div class="deadline-label">Submission Deadline</div>
+                                                <div class="deadline-value">March 3, 2026</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="deadline-card">
+                                                <div class="deadline-icon">
+                                                    <i class="bi bi-bell"></i>
+                                                </div>
+                                                <div class="deadline-label">Notifications</div>
+                                                <div class="deadline-value">March 31, 2026</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="deadline-card">
+                                                <div class="deadline-icon">
+                                                    <i class="bi bi-file-earmark-check"></i>
+                                                </div>
+                                                <div class="deadline-label">Camera-ready Version</div>
+                                                <div class="deadline-value">April 15, 2026</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -169,7 +202,7 @@
                                 <img src="https://kmi.open.ac.uk/images/people/medium/john-domingue.png" class="rounded-circle mx-auto shadow" alt="John Domingue">
                                 <h4 class="card-title mt-4 mb-1">John Domingue</h4>
                                 <p class="text-muted">The Open University, UK</p>
-                                <p class="card-text small flex-grow-1">John Domingue holds the position of Professor of Computer Science, at the Knowledge Media Institute (KMi), the Open University’s technology research and innovation centre. He also serves as the chair of the ESWC conference series Steering Committee and is a member of SWSA. With a career including serving as KMi Director from 2015 to 2022, Prof. Domingue has contributed 250 refereed articles in fields such as semantics, AI, the Web, distributed ledgers, and eLearning. From 2017 to 2021, he led the first of five themes, on University Learners, for the £40M Institute of Coding, an initiative aimed at increasing the number and diversity of computing graduates in the UK while strengthening the connection between university teaching and corporate training. Since the beginning of 2023, he has been at the forefront of examining the impact of Generative AI on higher education including a UKRI funded project (SAGE-RAI) with the Open Data Institute. John has delivered numerous talks on his work, including appearances at the Royal Institution in 2018, TEDx, and featured in THE Campus on interdisciplinary research teams. In 2019, he was inducted as a Fellow of the British Blockchain Association, and in 2020, he became an Honorary Professor at Amity University.</p>
+                                <p class="card-text small flex-grow-1">John Domingue holds the position of Professor of Computer Science, at the Knowledge Media Institute (KMi), the Open University's technology research and innovation centre. He also serves as the chair of the <a href="https://2026.eswc-conferences.org/" target="_blank">ESWC</a> conference series Steering Committee and is a member of SWSA. With a career including serving as KMi Director from 2015 to 2022, Prof. Domingue has contributed 250 refereed articles in fields such as semantics, AI, the Web, distributed ledgers, and eLearning. From 2017 to 2021, he led the first of five themes, on University Learners, for the £40M Institute of Coding, an initiative aimed at increasing the number and diversity of computing graduates in the UK while strengthening the connection between university teaching and corporate training. Since the beginning of 2023, he has been at the forefront of examining the impact of Generative AI on higher education including a UKRI funded project (SAGE-RAI) with the Open Data Institute. John has delivered numerous talks on his work, including appearances at the Royal Institution in 2018, TEDx, and featured in THE Campus on interdisciplinary research teams. In 2019, he was inducted as a Fellow of the British Blockchain Association, and in 2020, he became an Honorary Professor at Amity University.</p>
                                 <div class="chair-links mt-3">
                                     <a href="mailto:john.domingue@open.ac.uk" title="Email"><i class="bi bi-envelope-fill"></i></a>
                                     <a href="https://kmi.open.ac.uk/people/member/john-domingue" target="_blank" title="Homepage"><i class="bi bi-link-45deg"></i></a>
@@ -211,7 +244,7 @@
                                 <img src="https://oshani.info/author/oshani-seneviratne/avatar_hu5383073719754426958.jpg" class="rounded-circle mx-auto shadow" alt="Oshani Seneviratne">
                                 <h4 class="card-title mt-4 mb-1">Oshani Seneviratne</h4>
                                 <p class="text-muted">Rensselaer Polytechnic Institute, USA</p>
-                                <p class="card-text small flex-grow-1">Oshani Seneviratne is an Assistant Professor of Computer Science at Rensselaer Polytechnic Institute, where she leads the BRAINS Lab (Bridging Resilient, Accountable, Intelligent Networked Systems). Her research focuses on decentralized systems, including web technologies, blockchain, and decentralized learning, with applications in health informatics and decentralized finance. Oshani earned her S.M. and Ph.D. in Computer Science from MIT, where she was advised by Sir Tim Berners-Lee. She currently serves as Deputy Chair of the Web Science Trust Network and has held leadership positions in ACM conferences, including Chair of the ACM Web Science Test of Time Award Committee in 2024, and Program Co-Chair of the ACM Web Science Conference in 2022 and 2024.</p>
+                                <p class="card-text small flex-grow-1">Oshani Seneviratne is an Assistant Professor of Computer Science at Rensselaer Polytechnic Institute, where she leads the BRAINS Lab (Bridging Resilient, Accountable, Intelligent Networked Systems). Her research focuses on decentralized systems, including web technologies, blockchain, and decentralized learning, with applications in health informatics and decentralized finance. More Information about Oshani can be found <a href="https://oshani.info" target="_blank">here</a>.</p>
                                 <div class="chair-links mt-3">
                                     <a href="mailto:senevo@rpi.edu" title="Email"><i class="bi bi-envelope-fill"></i></a>
                                     <a href="https://oshani.info" target="_blank" title="Homepage"><i class="bi bi-link-45deg"></i></a>
