@@ -693,6 +693,28 @@ footer a:hover {
     margin-bottom: 8px;
 }
 
+.presentation-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 8px;
+    padding: 6px 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(13, 110, 253, 0.2);
+    background: rgba(13, 110, 253, 0.08);
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.presentation-link:hover {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .agenda-item {
