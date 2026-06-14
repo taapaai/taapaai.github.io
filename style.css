@@ -533,6 +533,35 @@ footer a:hover {
     margin: 30px 0;
 }
 
+.proceedings-highlight {
+    background: linear-gradient(to right, #e8f4fd, #f0f7ff);
+    border-left: 5px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 25px 30px;
+}
+
+.sponsors-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+}
+
+.sponsor-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.sponsor-link:hover {
+    color: #0b5ed7;
+    text-decoration: underline;
+}
+
 /* Deadline dates styling */
 .deadline-dates {
     margin-top: 20px;
