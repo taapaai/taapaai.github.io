@@ -3,41 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TAAPAAI @ ESWC'26 Workshop - 2nd Edition</title>
+    <title>TAAPAAI Barstuhl @ ISWC'26 · Bari</title>
+    <meta name="description" content="TAAPAAI: Towards Agendas for Advancing Personal Agentic Artificial Intelligence — a Dagstuhl-style Barstuhl workshop at ISWC 2026 in Bari, Italy.">
+    <meta property="og:title" content="TAAPAAI Barstuhl @ ISWC 2026">
+    <meta property="og:description" content="A discussion-led workshop on PKG-based agentic AI at ISWC 2026 in Bari, Italy. 26 October 2026.">
+    <meta property="og:type" content="website">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="90">
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="80">
-
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top py-3">
+    <nav id="navbar" class="navbar navbar-expand-xl navbar-dark fixed-top py-3">
         <div class="container">
-            <a class="navbar-brand" href="#">TAAPAAI @ ESWC'26</a>
+            <a class="navbar-brand" href="#">
+                <span class="brand-mark">B</span>
+                TAAPAAI Barstuhl
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#motivation">Motivation</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#submissions">Submissions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#challenges">Challenges</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#topics">Topics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#format">Format</a></li>
                     <li class="nav-item"><a class="nav-link" href="#agenda">Agenda</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#participate">Participate</a></li>
                     <li class="nav-item"><a class="nav-link" href="#chairs">Organizers</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#pc">Program Committee</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="previousEditionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Previous Editions
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="previousEditionsDropdown">
-                            <li><a class="dropdown-item" href="https://tapai-iswc25.github.io/" target="_blank">TAPAI@ISWC25</a></li>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="previousEditionsDropdown">
+                            <li><a class="dropdown-item" href="eswc2026/">TAAPAAI @ ESWC'26</a></li>
+                            <li><a class="dropdown-item" href="https://tapai-iswc25.github.io/" target="_blank" rel="noopener">TAPAI @ ISWC'25</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -46,576 +52,495 @@
     </nav>
 
     <header class="hero">
-        <div class="hero-pattern"></div>
+        <div class="hero-atmosphere" aria-hidden="true">
+            <span class="orb orb-1"></span>
+            <span class="orb orb-2"></span>
+            <span class="orb orb-3"></span>
+        </div>
         <div class="hero-content">
-            <h1 class="mb-4 text-white hero-title">Trust, Autonomy and Accountability in PKG-Based Agentic AI</h1>
-            <p class="hero-subtitle mb-3">TAAPAAI Workshop</p>
-            <p class="lead mb-3">2nd Edition - Workshop at <a href="https://2026.eswc-conferences.org/" target="_blank" class="text-white hero-link">ESWC 2026</a></p>
-            <p class="workshop-date mb-4">
-                <i class="bi bi-calendar-event"></i> May 10-14, 2026 | <i class="bi bi-geo-alt"></i> Dubrovnik, Croatia
+            <p class="hero-kicker">
+                <span class="hero-badge"><i class="bi bi-signpost-2"></i> Barstuhl Edition</span>
+                <span class="hero-badge subtle">Dagstuhl-style · Half day</span>
             </p>
-            <div class="hero-actions">
-                <a href="https://ceur-ws.org/Vol-4210" target="_blank" class="btn btn-light btn-lg">
-                    <i class="bi bi-journal-bookmark-fill"></i> TAAPAAI 2026 Proceedings — CEUR-WS.org Vol-4210
-                </a>
+            <p class="hero-acronym">TAAPAAI</p>
+            <h1 class="hero-title">Towards Agendas for Advancing Personal Agentic Artificial Intelligence</h1>
+            <p class="hero-lede">A discussion-led workshop on PKG-based agentic AI at <a href="https://iswc2026.semanticweb.org/" target="_blank" rel="noopener" class="hero-link">ISWC 2026</a></p>
+            <p class="workshop-date">
+                <span><i class="bi bi-calendar-event"></i> 26 October 2026</span>
+                <span class="dot" aria-hidden="true"></span>
+                <span><i class="bi bi-geo-alt"></i> Bari, Italy</span>
+                <span class="dot" aria-hidden="true"></span>
+                <span><i class="bi bi-building"></i> The Nicolaus Hotel</span>
+            </p>
+            <div class="countdown" id="countdown" aria-label="Time remaining until the workshop">
+                <div class="count-unit"><strong id="countDays">--</strong><span>Days</span></div>
+                <div class="count-unit"><strong id="countHours">--</strong><span>Hours</span></div>
+                <div class="count-unit"><strong id="countMins">--</strong><span>Minutes</span></div>
+                <div class="count-unit"><strong id="countSecs">--</strong><span>Seconds</span></div>
             </div>
-            <!-- <div class="hero-actions">
-                <a href="https://drive.google.com/drive/folders/1Rh5fHPjoyL4I880cLT5j3hJrzuhjgV6e?usp=drive_link" target="_blank" class="btn btn-primary btn-lg">
-                    <i class="bi bi-folder-fill"></i> ISWC 2025 First TAPAI Workshop Resources
-                </a>
-            </div> -->
+            <div class="hero-actions">
+                <a href="https://forms.gle/3RbSn4VubdCEZkDB8" target="_blank" rel="noopener" class="btn btn-terracotta btn-lg"><i class="bi bi-file-earmark-slides"></i> Submit a lightning talk proposal</a>
+                <a href="#agenda" class="btn btn-ghost btn-lg"><i class="bi bi-clock-history"></i> View the agenda</a>
+            </div>
+        </div>
+        <div class="hero-wave" aria-hidden="true">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,64 C240,120 480,0 720,48 C960,96 1200,16 1440,64 L1440,120 L0,120 Z"></path>
+            </svg>
         </div>
     </header>
 
     <main>
+        <section class="lineage-strip">
+            <div class="container">
+                <p class="lineage-label">Previous Editions</p>
+                <ol class="lineage">
+                    <li>
+                        <a href="https://www.dagstuhl.de/en/seminars/seminar-calendar/seminar-details/25051" target="_blank" rel="noopener">
+                            <span class="lineage-year">2025</span>
+                            <strong>Dagstuhl 25051</strong>
+                            <em>Seminar</em>
+                        </a>
+                    </li>   
+                    <li>
+                        <a href="https://tapai-iswc25.github.io/" target="_blank" rel="noopener">
+                            <span class="lineage-year">2025</span>
+                            <strong>TAPAI @ ISWC</strong>
+                            <em>Nara</em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="eswc2026/">
+                            <span class="lineage-year">2026</span>
+                            <strong>TAAPAAI @ ESWC</strong>
+                            <em>Dubrovnik</em>
+                        </a>
+                    </li>
+                    <li class="current">
+                        <a href="#">
+                            <span class="lineage-year">2026</span>
+                            <strong>Barstuhl @ ISWC</strong>
+                            <em>Bari</em>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
         <section id="about" class="section-padding">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 mx-auto">
-                        <div class="section-title text-center">
-                            <h2>About the Workshop</h2>
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6 reveal">
+                        <div class="section-kicker">About the workshop</div>
+                        <h2 class="section-heading">From acting agents to a shared research agenda</h2>
+                        <p class="lead-copy">Agentic AI systems—autonomous agents capable of planning, reasoning, and acting on behalf of users—are rapidly moving from prototypes into the world. That shift raises urgent questions of reliability, autonomy, accountability, and governance, especially when agents operate over personal and enterprise data.</p>
+                        <p>Personal Knowledge Graphs (PKGs) offer a promising foundation: explicit, machine-readable representations of context, policies, and provenance. Building on a successful <a href="https://www.dagstuhl.de/en/seminars/seminar-calendar/seminar-details/25051" target="_blank" rel="noopener">Dagstuhl Seminar</a> and prior TAPAI/TAAPAAI editions at ISWC and ESWC, this Barstuhl workshop convenes the community to consolidate architectures, decentralized ecosystems, and governance models for agentic systems grounded in semantic technologies.</p>
+                        <p class="mb-0">The format is discussion-first. The primary contribution is not a proceedings volume, but a co-created research agenda, a map of open challenges, and a common conceptual foundation that places the Semantic Web community at the forefront of PKG-based agentic AI.</p>
+                    </div>
+                    <div class="col-lg-6 reveal">
+                        <div class="stat-grid">
+                            <article class="stat-card">
+                                <i class="bi bi-hourglass-split"></i>
+                                <strong>Half day</strong>
+                                <span>Afternoon workshop, designed for depth over breadth</span>
+                            </article>
+                            <article class="stat-card">
+                                <i class="bi bi-people"></i>
+                                <strong>Discussion-led</strong>
+                                <span>Provocation talks, lightning talks, and breakouts</span>
+                            </article>
+                            <article class="stat-card">
+                                <i class="bi bi-diagram-3"></i>
+                                <strong>PKG-grounded</strong>
+                                <span>Personal, family, community, and natural knowledge graphs</span>
+                            </article>
+                            <article class="stat-card">
+                                <i class="bi bi-flag"></i>
+                                <strong>Agenda-setting</strong>
+                                <span>A shared roadmap, terminology, and manifesto for the field</span>
+                            </article>
                         </div>
-                        <p class="lead mb-5 about-lead-justified">Agentic AI systems, i.e., autonomous agents capable of planning, reasoning, and acting through tools, are rapidly shifting from labs into core enterprise and consumer products, leading to an era of operational AI. This transition significantly magnifies deep-seated concerns regarding Trust, Autonomy, and Accountability (TAA), as demonstrated by incidents ranging from internal data leaks to legal liability for misinformation. These failures underscore the urgent need for transparent, explainable, and governable agentic pipelines. Personal Knowledge Graphs (PKGs) offer a principled and verifiable solution. By modelling a user's personal context, including policies, constraints, and data provenance, using explicit, machine-readable semantics, PKGs can operationalize TAA. They enable agents to achieve stronger alignment with user intent, provide clear, grounded explanations, and enforce accountability through traceable, auditable links between actions and inferences. The second edition of the TAPAI workshop at <a href="https://2026.eswc-conferences.org/" target="_blank">ESWC 2026</a> is designed to leverage this crucial intersection of Agentic AI, TAA, and Knowledge Graphs. We will convene Semantic Web/KG researchers, AI safety scholars, industry practitioners, and policy experts. The day will feature an engaging, outcome-oriented format, including keynote and lightning talk provocations from academia and industry, interactive panel and live polling to facilitate real-time engagement, as well as an outcome-oriented roadmapping session, where participants will co-create a vision document and manifesto for TAA issues in PKG-based agentic AI, providing a clear path forward for the community.</p>                        
-                        <h4 class="text-center mb-3">Key Topics</h4>
-                        <ul class="topic-list text-center mb-5">
-                            <li>Trust</li><li>Autonomy</li><li>Sovereignty</li><li>Accountability</li>
-                            <li>Ethics</li><li>Diversity</li><li>PKGs</li><li>Agentic AI</li>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="challenges" class="section-padding section-sand">
+            <div class="container">
+                <div class="section-title text-center reveal">
+                    <div class="section-kicker">Motivation</div>
+                    <h2 class="section-heading">Five challenges that need a community</h2>
+                    <p class="section-intro">Agentic AI is moving from systems that generate outputs to systems that act in complex environments. Centralized infrastructures risk undermining data sovereignty. The field still lacks shared architectures, conceptual frameworks, and interoperability standards for PKG-based agentic AI. These challenges are socio-technical—and best tackled in a Dagstuhl-style room.</p>
+                </div>
+                <div class="challenge-grid">
+                    <button type="button" class="challenge-card active" data-challenge="architectures" aria-expanded="true">
+                        <span class="challenge-index">01</span>
+                        <h3>Architectures</h3>
+                        <p>Defining architectures for PKG-based agentic systems and the ecosystems they inhabit.</p>
+                    </button>
+                    <button type="button" class="challenge-card" data-challenge="reliability" aria-expanded="false">
+                        <span class="challenge-index">02</span>
+                        <h3>Reliability</h3>
+                        <p>Operationalizing reliability, explainability, and accountability in agents that act.</p>
+                    </button>
+                    <button type="button" class="challenge-card" data-challenge="autonomy" aria-expanded="false">
+                        <span class="challenge-index">03</span>
+                        <h3>Autonomy</h3>
+                        <p>Balancing agent autonomy with user control and runtime policy enforcement.</p>
+                    </button>
+                    <button type="button" class="challenge-card" data-challenge="coordination" aria-expanded="false">
+                        <span class="challenge-index">04</span>
+                        <h3>Coordination</h3>
+                        <p>Enabling multi-agent and multi-stakeholder coordination without collapsing agency.</p>
+                    </button>
+                    <button type="button" class="challenge-card" data-challenge="interop" aria-expanded="false">
+                        <span class="challenge-index">05</span>
+                        <h3>Interoperability</h3>
+                        <p>Facilitating interoperability, decentralization, and regulatory compliance together.</p>
+                    </button>
+                </div>
+                <div class="challenge-detail reveal" id="challengeDetail">
+                    <h3 id="challengeDetailTitle">Architectures for PKG-based agentic systems</h3>
+                    <p id="challengeDetailBody">How should a personal knowledge graph sit inside an agent loop—planning, memory, tool use, and action? We need reference architectures that make context, policies, and provenance first-class, and that scale from a single personal agent to families of collaborating systems.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="topics" class="section-padding">
+            <div class="container">
+                <div class="section-title text-center reveal">
+                    <div class="section-kicker">Themes</div>
+                    <h2 class="section-heading">Explore the topic space</h2>
+                    <p class="section-intro">A selective set of themes at the intersection of PKGs, agentic AI, and governance. Filter a cluster, then open any topic for a short framing.</p>
+                </div>
+                <div class="topic-filters" role="tablist" aria-label="Topic clusters">
+                    <button type="button" class="filter-chip active" data-filter="all">All themes</button>
+                    <button type="button" class="filter-chip" data-filter="systems">Architectures &amp; systems</button>
+                    <button type="button" class="filter-chip" data-filter="knowledge">Knowledge &amp; memory</button>
+                    <button type="button" class="filter-chip" data-filter="governance">Governance &amp; responsibility</button>
+                    <button type="button" class="filter-chip" data-filter="infra">Infrastructure &amp; interoperability</button>
+                </div>
+                <div class="topic-board" id="topicBoard">
+                    <button type="button" class="topic-tile" data-cluster="systems" data-title="Architectures for PKG-based agentic systems" data-body="How should personal knowledge graphs sit inside agent loops—planning, tool use, memory, and action—and how do those loops compose into ecosystems?">Architectures for PKG-based agentic systems</button>
+                    <button type="button" class="topic-tile" data-cluster="governance" data-title="Bias, fairness, and responsible AI" data-body="How can PKG-grounded agents surface diverse, ethically informed perspectives rather than amplifying biased or homogenized views?">Bias, fairness, and responsible AI</button>
+                    <button type="button" class="topic-tile" data-cluster="knowledge" data-title="Data integration, querying, and reasoning over PKGs" data-body="Semantic integration, querying, and inference over personal graphs so agents can retrieve, combine, and justify the context they use.">Data integration, querying, and reasoning</button>
+                    <button type="button" class="topic-tile" data-cluster="infra" data-title="Decentralized infrastructures" data-body="Solid, the Fediverse, ActivityPub, and other user-centric substrates as homes for personal agents and their graphs.">Decentralized infrastructures</button>
+                    <button type="button" class="topic-tile" data-cluster="systems" data-title="Developer and user experience" data-body="Making PKG-based agents usable, inspectable, and controllable—for the people who build them and the people they act for.">Developer and user experience</button>
+                    <button type="button" class="topic-tile" data-cluster="infra" data-title="Interoperability, standards, and agent protocols" data-body="Shared protocols and standards so agents can communicate and coordinate without locking users into a single vendor stack.">Interoperability and agent protocols</button>
+                    <button type="button" class="topic-tile" data-cluster="knowledge" data-title="Memory, context, and real-world modeling" data-body="Grounding agent memory in explicit, evolving models of people, places, events, constraints, and the world they act in.">Memory, context, and real-world modeling</button>
+                    <button type="button" class="topic-tile" data-cluster="systems" data-title="Multi-agent systems and coordination" data-body="Coordination among personal, institutional, and collective agents when goals, policies, and loyalties do not coincide.">Multi-agent systems and coordination</button>
+                    <button type="button" class="topic-tile" data-cluster="knowledge" data-title="Personal, collective, family, and natural KGs" data-body="Extending PKGs toward community, family, and nature knowledge graphs (CommKGs, FamKGs, NatureKGs) as shared semantic substrates.">PKGs, CommKGs, FamKGs, NatureKGs</button>
+                    <button type="button" class="topic-tile" data-cluster="knowledge" data-title="PKG toplevel ontologies" data-body="Shared upper models so personal graphs remain interoperable across agents, domains, and the lifetime of a person’s data.">PKG toplevel ontologies</button>
+                    <button type="button" class="topic-tile" data-cluster="systems" data-title="PKGs for autonomous agents" data-body="Using PKGs as the operational memory and policy layer for agents that plan, decide, and act on a user’s behalf.">PKGs for autonomous agents</button>
+                    <button type="button" class="topic-tile" data-cluster="governance" data-title="Policies and norms" data-body="Encoding permissions, obligations, and social norms—via languages such as ODRL and LegalRuleML—that agents can respect at runtime.">Policies and norms</button>
+                    <button type="button" class="topic-tile" data-cluster="governance" data-title="Regulation and governance" data-body="Connecting agent behavior to GDPR, the EU AI Act, and related regimes so compliance is designed in, not bolted on.">Regulation and governance</button>
+                    <button type="button" class="topic-tile" data-cluster="systems" data-title="Recursive and self-improving agents" data-body="Agents that rewrite their own strategies, tools, and graphs—and the dynamic ecosystems that emerge when they do.">Recursive / self-improving agents</button>
+                    <button type="button" class="topic-tile" data-cluster="governance" data-title="Security and privacy" data-body="Protecting sensitive personal graphs while still enabling useful, inspectable agent behavior.">Security and privacy</button>
+                    <button type="button" class="topic-tile" data-cluster="governance" data-title="Data sovereignty" data-body="Keeping individuals and communities in control of the data—and the inferences—that power their agents.">Data sovereignty</button>
+                    <button type="button" class="topic-tile" data-cluster="knowledge" data-title="Targeted, context-aware retrieval" data-body="Retrieving the right slice of a PKG at the right moment in an agent workflow, with provenance attached.">Targeted and context-aware retrieval</button>
+                    <button type="button" class="topic-tile" data-cluster="governance" data-title="Trust, autonomy, self-sovereignty, and accountability" data-body="The TAA core: trustworthy behavior, meaningful human autonomy, self-sovereignty over personal context, and auditable accountability.">Trust, autonomy, and accountability</button>
+                </div>
+                <div class="topic-detail" id="topicDetail" hidden>
+                    <p class="topic-detail-kicker">Selected theme</p>
+                    <h3 id="topicDetailTitle"></h3>
+                    <p id="topicDetailBody"></p>
+                    <button type="button" class="text-btn" id="topicDetailClose">Close</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="format" class="section-padding section-ink">
+            <div class="container">
+                <div class="section-title text-center reveal">
+                    <div class="section-kicker light">Workshop format</div>
+                    <h2 class="section-heading">A Barstuhl afternoon</h2>
+                    <p class="section-intro light">Named for Bari’s turn as host, Barstuhl borrows the Dagstuhl seminar spirit: interaction over presentations, collective sense-making over a packed talk list, and artifacts the community can take home.</p>
+                </div>
+                <div class="format-tabs" role="tablist">
+                    <button type="button" class="format-tab active" data-format="participation" role="tab" aria-selected="true">Participation</button>
+                    <button type="button" class="format-tab" data-format="interaction" role="tab" aria-selected="false">Interaction</button>
+                    <button type="button" class="format-tab" data-format="outcomes" role="tab" aria-selected="false">Outcomes</button>
+                </div>
+                <div class="format-panels">
+                    <article class="format-panel active" data-format="participation">
+                        <div class="format-icon"><i class="bi bi-mic"></i></div>
+                        <h3>Arrive with a point of view</h3>
+                        <p>We open with framing from the organizers, two short invited provocations, and lightning talks from the room. Submit a one-slide proposal in PPTX or PDF if you would like to speak.</p>
+                        <ul>
+                            <li>Background and motivation</li>
+                            <li>Two invited talks (15 minutes each)</li>
+                            <li>Lightning talks from accepted one-slide proposals</li>
                         </ul>
-                    
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section id="motivation" class="section-padding bg-light">
-            <div class="container">
-                <div class="section-title text-center">
-                    <h2>Motivation & Objectives</h2>
-                </div>
-                <div class="row">
-                    <div class="col-lg-10 mx-auto about-lead-justified">
-                        <p>Agentic AI systems—autonomous or semi-autonomous agents that can plan, reason, and act through tools and user interfaces—are rapidly moving from labs into everyday products. In the past year, major players have converged on agent-first roadmaps: OpenAI introduced <a href="https://openai.com/index/introducing-operator/">Operator</a> and followed with <a href="https://openai.com/index/introducing-chatgpt-atlas/">ChatGPT Atlas</a>, a native browser with an embedded agent mode; Salesforce launched <a href="https://www.salesforce.com/news/press-releases/2025/10/13/agentic-enterprise-announcement/">Agentforce 360</a> for enterprise-grade agent orchestration; and Google released <a href="https://deepmind.google/blog/sima-2-an-agent-that-plays-reasons-and-learns-with-you-in-virtual-3d-worlds/">SIMA 2</a>, a Gemini-powered embodied agent for interactive environments, alongside <a href="https://deepmind.google/models/gemini/">Gemini 3</a> and <a href="https://gemini.google/overview/agent/">Gemini Agent</a> that coordinate multi-step tasks across Gmail, Calendar, live browsing, and more. Together, these advances signal not just improved assistants but operational AI that executes goals on our behalf across the web and enterprise systems.</p>
-                        <p>Yet this shift magnifies long-standing concerns around trust, autonomy, and accountability. Recent incidents illustrate how fragile trust can be when agents act with imperfect oversight. For example, <a href="https://techcrunch.com/2023/05/02/samsung-bans-use-of-generative-ai-tools-like-chatgpt-after-april-internal-data-leak/">Samsung's internal data leak via ChatGPT</a> sparked an enterprise ban and policy reset; an OpenAI bug exposed some users' chat titles and limited billing details; a <a href="https://www.cbc.ca/news/canada/british-columbia/air-canada-chatbot-lawsuit-1.7116416">Canadian tribunal held Air Canada liable</a> for a chatbot's misinformation; and <a href="https://www.businessinsider.com/car-dealership-chevrolet-chatbot-chatgpt-pranks-chevy-2023-12">prompt-injection exploits</a> have shown how chatbots can be manipulated to make absurd, brand-damaging commitments. These failures are not curiosities; they underscore the need for transparent knowledge grounding, verifiable provenance, and explicit user-governed policies in agentic pipelines.</p>
-                        <p>Personal Knowledge Graphs (PKGs) offer a principled answer. PKGs represent a user's personal context including preferences, constraints, roles, data entitlements, and task histories as explicit, machine-readable semantics, enabling agents to: (i) align decisions with user intent; (ii) provide explanations grounded in named entities, relations, policies and provenance; and (iii) enforce accountability via traceable, signed, and auditable links between inputs, inferences, and actions. For a community centred on Knowledge Graphs and the Semantic Web, PKGs are the obvious substrate to operationalize Trust, Autonomy, and Accountability in agentic systems—turning opaque behaviours into inspectable, governable workflows, enabling technologies associated with linked data, reasoning, and provenance to enable human agency in the agent era.</p>
-                        <p>Building on the success of the <a href="https://tapai-iswc25.github.io">first edition at ISWC 2025</a> (run in a Dagstuhl-style format and attracting a focused group of ~20 researchers and practitioners), this second edition at <a href="https://2026.eswc-conferences.org/" target="_blank">ESWC 2026</a> transitions to a standard interactive workshop to broaden participation and crystallize a research agenda. We wish to examine these aspects further through the following topics:</p>
-                        
-                        <div class="row mt-5">
-                             <div class="col-md-6 mb-4">
-                                <div class="card h-100">
-                                    <div class="card-body">
-                                        <h5 class="card-title text-primary"><i class="bi bi-shield-check"></i> Trust</h5>
-                                        <p class="card-text">What are the key requirements for a PKG-based agentic AI to enhance human & institutional trust?</p>
-                                    </div>
-                                </div>
-                            </div>
-                             <div class="col-md-6 mb-4">
-                                <div class="card h-100">
-                                    <div class="card-body">
-                                        <h5 class="card-title text-primary"><i class="bi bi-person-check"></i> Autonomy</h5>
-                                        <p class="card-text">How can individuals retain meaningful autonomy when interacting with or delegating to PKG-Based Agentic AI systems?</p>
-                                    </div>
-                                </div>
-                            </div>
-                             <div class="col-md-6 mb-4">
-                                <div class="card h-100">
-                                    <div class="card-body">
-                                        <h5 class="card-title text-primary"><i class="bi bi-journal-check"></i> Accountability</h5>
-                                        <p class="card-text">How can PKG-based agentic AI be made accountable for decisions they inform or make?</p>
-                                    </div>
-                                </div>
-                            </div>
-                             <div class="col-md-6 mb-4">
-                                <div class="card h-100">
-                                    <div class="card-body">
-                                        <h5 class="card-title text-primary"><i class="bi bi-globe-americas"></i> Ethical Diversity</h5>
-                                        <p class="card-text">How can such systems ensure the surfacing of diverse, ethically informed perspectives rather than reinforcing biased views?</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="container">
-                <div class="section-title text-center">
-                    <h3>Expected Outcomes</h3>
-                </div>
-                <div class="row">
-                    <div class="col-lg-8 mx-auto text-center">
-                        <p class="about-lead-justified">This workshop will convene Semantic Web/KG researchers, AI safety scholars, industry practitioners, and policy experts. The day will feature an engaging, outcome-oriented format, including keynote and lightning talk provocations from academia and industry, interactive panel and live polling to facilitate real-time engagement, as well as an outcome-oriented roadmapping session, where participants will co-create a vision document and manifesto for TAA issues in PKG-based agentic AI, providing a clear path forward for the community.</p>
-                        <p class="about-lead-justified">All workshop materials will be openly shared on this website to support transparency and community engagement.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="submissions" class="section-padding">
-            <div class="container">
-                <div class="section-title text-center">
-                    <h2>Call for Papers</h2>
-                </div>
-                <div class="row">
-                    <div class="col-lg-10 mx-auto about-lead-justified">
-                        <h3 class="mb-4 mt-4">Topics of Interest</h3>
-                        <p class="lead mb-4">We invite submissions addressing one or more of the following themes (non-exhaustive list):</p>
-                        <ul class="topics-list mb-5">
-                            <li>Trust and transparency in PKG-based agentic systems</li>
-                            <li>Accountability frameworks for autonomous agents</li>
-                            <li>Ethical, compliance and legal considerations in personalized AI</li>
-                            <li>PKG-driven reasoning and decision-making for personal agents</li>
-                            <li>Explainability and interpretability in agentic AI</li>
-                            <li>Human-agent collaboration and oversight</li>
-                            <li>Security, privacy, and data governance in PKGs</li>
-                            <li>Evaluation metrics for trust and autonomy in AI agents</li>
+                    </article>
+                    <article class="format-panel" data-format="interaction">
+                        <div class="format-icon"><i class="bi bi-arrow-repeat"></i></div>
+                        <h3>Thi
+                            nk together, then rotate</h3>
+                        <p>Thematic breakouts and a rotating discussion groups let mixed groups of Semantic Web, AI, policy, and industry voices work the same questions from different angles, then reconvene.</p>
+                        <ul>
+                            <li>Thematic breakout sessions</li>
+                            <li>Rotating discussions</li>
+                            <li>Plenary consolidation with live maps and clusters</li>
                         </ul>
-
-                        <h3 class="mb-4 mt-5" id="submission_types">Submission Types</h3>
-                        <ul class="mb-4">
-                            <li><strong>Full papers:</strong> Up to 12 pages (excluding references)</li>
-                            <li><strong>Position papers:</strong> 4-6 pages (excluding references)</li>
-                            <li><strong>Summary of existing work:</strong> 2-4 pages (excluding references) <a href="#submission-type-note" class="footnote-ref" id="submission-type-ref" aria-label="See note">¹</a> <span class="badge-new">New!</span></li>
+                    </article>
+                    <article class="format-panel" data-format="outcomes">
+                        <div class="format-icon"><i class="bi bi-map"></i></div>
+                        <h3>Leave with a shared artifact</h3>
+                        <p>The afternoon closes by turning discussion into a draft research agenda: challenges, terminology, standardization priorities, and a vision the community can keep building after Bari.</p>
+                        <ul>
+                            <li>Roadmapping and consensus-building</li>
+                            <li>Documented on this website and in follow-up writing</li>
+                            <li>Seeds for collaborations and joint proposals</li>
                         </ul>
-                        <div id="submission-type-note" class="submission-type-note mt-3 mb-4" role="note">
-                            <a href="#submission-type-ref" class="footnote-back" aria-label="Back to list">↩</a> <strong>Note:</strong> The <em>Summary of existing work</em> is a new submission type. Submissions must clearly present a summary (not original research) and cite the existing work—one or more papers—in the introduction.
-                        </div>
-                        <p class="mb-4">All must be submitted and formatted in the style of the CEUR proceedings format. For details on CEUR style, see <a href="https://ceur-ws.org/HOWTOSUBMIT.html" target="_blank">CEUR's Author Instructions</a>.
-                        Also see <a href="https://www.overleaf.com/latex/templates/template-for-submissions-to-ceur-workshop-proceedings-ceur-ws-dot-org/wqyfdgftmcfw" target="_blank">Overleaf Template</a>.</p>
-                        <p class="mb-4"><strong>Papers must be submitted via <a href="https://easychair.org/conferences?conf=taapaai26" target="_blank">https://easychair.org/conferences?conf=taapaai26</a></strong></p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-                        <h3 class="mb-4 mt-5">Important Dates</h3>
-                        <p class="mb-4">All deadlines are 23:59 Anywhere on Earth (UTC-12).</p>
-                        <div class="submission-highlight">
-                            <div class="text-center">
-                                <button type="button" class="btn btn-secondary btn-lg mb-4" disabled aria-disabled="true" title="Submissions are closed">
-                                    <i class="bi bi-file-earmark-text"></i> Submit via EasyChair — submissions are closed
-                                </button>
-                                <div class="deadline-dates mt-4">
-                                    <div class="row g-3">
-                                        <div class="col-md-4">
-                                            <div class="deadline-card">
-                                                <div class="deadline-icon">
-                                                    <i class="bi bi-calendar-check"></i>
-                                                </div>
-                                                <div class="deadline-label">Submission Deadline (Extended!)</div>
-                                                <div class="deadline-value"><span class="old-deadline">March 3, 2026</span> <strong>March 13, 2026</strong></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="deadline-card">
-                                                <div class="deadline-icon">
-                                                    <i class="bi bi-bell"></i>
-                                                </div>
-                                                <div class="deadline-label">Notification of Acceptance</div>
-                                                <div class="deadline-value">March 31, 2026</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="deadline-card">
-                                                <div class="deadline-icon">
-                                                    <i class="bi bi-file-earmark-check"></i>
-                                                </div>
-                                                <div class="deadline-label">Camera-ready Deadline</div>
-                                                <div class="deadline-value"><span class="old-deadline">April 15, 2026</span> <strong>April 26, 2026</strong></div>
-                                            </div>
-                                        </div>
-                                    </div>
+        <section id="agenda" class="section-padding">
+            <div class="container">
+                <div class="section-title text-center reveal">
+                    <div class="section-kicker">Schedule</div>
+                    <h2 class="section-heading">Half-day Program</h2>
+                    <p class="section-intro"></p>
+                </div>
+                <div class="agenda-track">
+                    <article class="agenda-row">
+                        <time>14:10–14:20</time>
+                        <div>
+                            <h3>Introduction and framing</h3>
+                            <p>Organizers set the Barstuhl brief: why PKG-based agentic AI, and what we intend to leave with.</p>
+                        </div>
+                    </article>
+                    <article class="agenda-row">
+                        <time>14:20–14:50</time>
+                        <div>
+                            <h3>Invited talks</h3>
+                            <p>Two 15-minute provocations.</p>
+                        </div>
+                    </article>
+                    <article class="agenda-row">
+                        <time>14:50–15:50</time>
+                        <div>
+                            <h3>Lightning talks</h3>
+                            <p>Short talks from participants. Submit a one-slide proposal (PPTX or PDF) via the <a href="https://forms.gle/3RbSn4VubdCEZkDB8" target="_blank" rel="noopener">Google Form</a>.</p>
+                        </div>
+                    </article>
+                    <article class="agenda-row break">
+                        <time>15:50–16:20</time>
+                        <div>
+                            <h3>Coffee break</h3>
+                            <p></p>
+                        </div>
+                    </article>
+                    <article class="agenda-row">
+                        <time>16:20–16:50</time>
+                        <div>
+                            <h3>Breakout session 1</h3>
+                            <p>Working groups on key themes: architectures, accountability, autonomy, coordination, and interoperability.</p>
+                        </div>
+                    </article>
+                    <article class="agenda-row">
+                        <time>16:50–17:20</time>
+                        <div>
+                            <h3>Breakout session 2</h3>
+                            <p>Rotations so every group inherits (and pressure-tests) another table’s notes.</p>
+                        </div>
+                    </article>
+                    <article class="agenda-row">
+                        <time>17:20–17:50</time>
+                        <div>
+                            <h3>Plenary synthesis</h3>
+                            <p>Live visual artifacts: maps, clusters, and contested terms brought back to the full room.</p>
+                        </div>
+                    </article>
+                    <article class="agenda-row highlight">
+                        <time>17:50–18:00</time>
+                        <div>
+                            <h3>Roadmapping and outcomes</h3>
+                            <p>Capture the draft agenda, manifesto fragments, and follow-ups before we leave the room.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="outcomes" class="section-padding section-sand">
+            <div class="container">
+                <div class="section-title text-center reveal">
+                    <div class="section-kicker">Expected results</div>
+                    <h2 class="section-heading">What we will make together</h2>
+                    <p class="section-intro">Outputs will be documented on this website and carried into follow-up publications and joint proposals.</p>
+                </div>
+                <div class="outcome-grid">
+                    <article class="outcome-card">
+                        <span>01</span>
+                        <h3>Challenge map</h3>
+                        <p>A map of key challenges and future research directions for PKG-based agentic AI.</p>
+                    </article>
+                    <article class="outcome-card">
+                        <span>02</span>
+                        <h3>Shared language</h3>
+                        <p>A conceptual framework and terminology alignment the community can actually use.</p>
+                    </article>
+                    <article class="outcome-card">
+                        <span>03</span>
+                        <h3>Interop priorities</h3>
+                        <p>Identification of standardization and interoperability work that should come next.</p>
+                    </article>
+                    <article class="outcome-card">
+                        <span>04</span>
+                        <h3>Vision / manifesto</h3>
+                        <p>A draft vision document for the field, continuing the TAAPAAI series.</p>
+                    </article>
+                    <article class="outcome-card">
+                        <span>05</span>
+                        <h3>Collaborations</h3>
+                        <p>New collaborations, follow-up initiatives, and seeds for joint proposals.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="participate" class="section-padding">
+            <div class="container">
+                <div class="row g-5 align-items-start">
+                    <div class="col-lg-6 reveal">
+                        <div class="section-kicker">Call for participation</div>
+                        <h2 class="section-heading">Submit Your Ideas!</h2>
+                        <p>Barstuhl is open to ISWC attendees. We especially welcome Semantic Web and Knowledge Graph researchers, AI and agentic-systems researchers, experts in decentralization, data governance and policy, industry practitioners building agent-based systems, and early-career researchers.</p>
+                        <p>Anyone interested in participating should submit a talk proposal as a single slide, in PPTX or PDF, via the Google Form.</p>
+                        <a class="btn btn-terracotta" href="https://forms.gle/3RbSn4VubdCEZkDB8" target="_blank" rel="noopener">
+                            <i class="bi bi-file-earmark-slides"></i> Submit a one-slide talk proposal
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <ul class="audience-list">
+                            <li>
+                                <i class="bi bi-share"></i>
+                                <div>
+                                    <strong>Semantic Web &amp; Knowledge Graphs</strong>
+                                    <span>Researchers shaping PKG models, reasoning, and provenance.</span>
                                 </div>
-                            </div>
-                        </div>
-
-                        <h3 class="mb-4 mt-5" id="camera-ready-instructions">Camera-ready Instructions</h3>
-                        <div class="camera-ready-note mb-5">
-                            <p><strong>Camera-ready deadline:</strong> April 26, 2026. </p>
-                            <p>Authors should address the reviews they received. You are allowed <strong>one additional page</strong> in the camera-ready version for revisions and clarifications.</p>
-                            <p><strong>Format requirement:</strong> Use the <a href="https://www.overleaf.com/latex/templates/template-for-submissions-to-ceur-workshop-proceedings-ceur-ws-dot-org/wqyfdgftmcfw" target="_blank">CEURART template</a>, and ensure all PDFs follow CEUR template instructions.</p>
-                            <p>The <strong>Declaration on Generative AI</strong> must be included before the References section (see point 11 of <a href="https://ceur-ws.org/HOWTOSUBMIT.html" target="_blank">CEUR submission instructions</a>).</p>
-                            <p>Please include the following workshop footer text in your camera-ready paper:</p>
-                            <p class="camera-ready-code">ESWC’26: Trust, Autonomy and Accountability in PKG-Based Agentic AI (TAAPAAI) Workshop on May 10, 2026 in Dubrovnik, Croatia</p>
-                            <p>Alternatively, use this LaTeX snippet:</p>
-                            <p class="camera-ready-code">\conference{ESWC’26: Trust, Autonomy and Accountability in PKG-Based Agentic AI (TAAPAAI) Workshop on May 10, 2026 in Dubrovnik, Croatia}</p>
-                            <p>Please also add this copyright footer text:</p>
-                            <p class="camera-ready-code">© 2026 Copyright for this paper by its authors. Use permitted under Creative Commons License Attribution 4.0 International (CC BY 4.0).</p>
-                            <p>or the following LaTeX snippet:</p>
-                            <p class="camera-ready-code">\copyrightyear{2026}<br>\copyrightclause{Copyright for this paper by its authors.<br>Use permitted under Creative Commons License Attribution 4.0<br>International (CC BY 4.0).}</p>
-                            <p><strong>File naming:</strong> 
-                                <ul>
-                                    <li>
-                                        Please name your camera-ready paper file <strong>TAAPAAI26_Paper_XX.pdf</strong>, where <strong>XX</strong> is your EasyChair paper number.
-                                    </li>
-                                    <li>
-                                        Please download the <a href="TAAPAAI-ceur-author-agreement-ccby-ntp.pdf" target="_blank">copyright form</a>, fill it out with your paper's details and sign it in ink. Name the file as  <strong>TAAPAAI26_Copyright_XX.pdf</strong>, where <strong>XX</strong> is your EasyChair paper number.
-                                    </li>
-                                </ul>
-                                 
-                            <p><strong>File Upload Location:</strong> Please upload your camera-ready paper to <a href="https://drive.google.com/drive/folders/1JkO5W61wlGO35JBZeb8DLjelDwn1CfHS?usp=sharing" target="_blank">the TAAPAAI Camera-Ready Submissions folder</a>.</p>
-
-                            <p class="mb-0"><strong>Conference registration:</strong> At least one author of each accepted paper must register and present the paper in person. Please follow the <a href="https://2026.eswc-conferences.org/attending/registration/1" target="_blank">ESWC 2026 registration</a> for details.</p>
-                        </div>
-
-                        <h3 class="mb-4 mt-5">Proceedings</h3>
-                        <div class="proceedings-highlight mb-5">
-                            <p class="lead mb-3"><strong>TAAPAAI 2026 proceedings are now available!</strong></p>
-                            <p class="mb-0">Read the published workshop papers in <a href="https://ceur-ws.org/Vol-4210" target="_blank">CEUR Workshop Proceedings, Vol-4210</a> (indexed in DBLP).</p>
-                        </div>
-
-                        <p class="lead text-center mb-4">For questions about submissions, please contact us at <a href="mailto:taapaai26@easychair.org">taapaai26@easychair.org</a>.</p>
+                            </li>
+                            <li>
+                                <i class="bi bi-robot"></i>
+                                <div>
+                                    <strong>AI and agentic systems</strong>
+                                    <span>People building agents that plan, remember, and act.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="bi bi-shield-check"></i>
+                                <div>
+                                    <strong>Decentralization, governance &amp; policy</strong>
+                                    <span>Solid, sovereignty, GDPR, and the EU AI Act in practice.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="bi bi-building"></i>
+                                <div>
+                                    <strong>Industry practitioners</strong>
+                                    <span>Teams shipping agent-based products who need governable context.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="bi bi-mortarboard"></i>
+                                <div>
+                                    <strong>Early-career researchers &amp; PhD students</strong>
+                                    <span>A focused room in which to help set the next agenda.</span>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="agenda" class="section-padding bg-light">
+        <section id="chairs" class="section-padding section-sand">
             <div class="container">
-                <div class="section-title text-center">
-                    <h2>TAAPAAI26 Agenda</h2>
-                </div>
-                <div class="row">
-                    <div class="col-lg-10 mx-auto">
-                        <div class="agenda-session">
-                            <h3 class="session-header session-title">Workshop Program</h3>
-
-                            <div class="agenda-item">
-                                <div class="time-badge">09:00 - 10:30</div>
-                                <div class="agenda-content">
-                                    <h5>Welcome &amp; Paper Presentations</h5>
-                                    <p>Welcome from the TAAPAAI26 workshop chairs</p>
-                                    <div class="talk-list">
-                                        <div class="talk-item">
-                                            <strong>Personal Agents and Conversational Memory</strong>
-                                            <p class="speaker-info"><i class="bi bi-person-lines-fill"></i>Sungeun An and Anna Lisa Gentile</p>
-                                            <a href="presentations/Personal%20Agents%20and%20Conversational%20Memory.pdf" target="_blank" class="presentation-link">
-                                                <i class="bi bi-file-earmark-slides"></i> View presentation
-                                            </a>
-                                        </div>
-                                        <div class="talk-item">
-                                            <strong>Life Events as a basis for PKG Agent Friendly Registries</strong>
-                                            <p class="speaker-info"><i class="bi bi-person-lines-fill"></i>Aisling Third and John Domingue</p>
-                                            <a href="presentations/Life%20Events%20as%20a%20basis%20for%20PKG%20Agent%20Friendly%20Registries.pdf" target="_blank" class="presentation-link">
-                                                <i class="bi bi-file-earmark-slides"></i> View presentation
-                                            </a>
-                                        </div>
-                                        <div class="talk-item">
-                                            <strong>Toward Trustworthy Personal AI: A Sovereign Agentic Web Architecture Using Solid, Federated Learning, and Personal Knowledge Graphs</strong>
-                                            <p class="speaker-info"><i class="bi bi-person-lines-fill"></i>Fernando Spadea, Lorenzo Carta, Abhirup Dasgupta, Md Saikat Islam Khan Bappy and Oshani Seneviratne</p>
-                                            <a href="presentations/Toward%20Trustworthy%20Personal%20AI.pdf" target="_blank" class="presentation-link">
-                                                <i class="bi bi-file-earmark-slides"></i> View presentation
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="agenda-item break-item">
-                                <div class="time-badge">10:30 - 11:00</div>
-                                <div class="agenda-content">
-                                    <h5>Coffee Break</h5>
-                                </div>
-                            </div>
-
-                            <div class="agenda-item">
-                                <div class="time-badge">11:00 - 12:30</div>
-                                <div class="agenda-content">
-                                    <h5>Paper Presentations</h5>
-                                    <div class="talk-list">
-                                        <div class="talk-item">
-                                            <strong>Semantic Provenance and Policy-Aware Explanations for Agentic Coding Systems</strong>
-                                            <p class="speaker-info"><i class="bi bi-person-lines-fill"></i>Peb Ruswono Aryan</p>
-                                            <a href="presentations/Semantic%20Provenance%20and%20Policy-Aware%20Explanations%20for%20Agentic%20Coding%20Systems.pdf" target="_blank" class="presentation-link">
-                                                <i class="bi bi-file-earmark-slides"></i> View presentation
-                                            </a>
-                                        </div>
-                                        <div class="talk-item">
-                                            <strong>Explanation as Evaluation: Using explanation quality to measure AI system performance</strong>
-                                            <p class="speaker-info"><i class="bi bi-person-lines-fill"></i>Paul Groth, Michael Cochez, Michel Dumontier, Fajar J. Ekaputra and Monica Palmirani</p>
-                                            <a href="presentations/Explanation%20as%20Evaluation.pdf" target="_blank" class="presentation-link">
-                                                <i class="bi bi-file-earmark-slides"></i> View presentation
-                                            </a>
-                                        </div>
-                                        <div class="talk-item">
-                                            <strong>Trustworthy Agentic AI via Privacy-Preserving Synthetic Data: Lessons from Financial Tabular Data for PKG Systems</strong>
-                                            <p class="speaker-info"><i class="bi bi-person-lines-fill"></i>Oshani Seneviratne, Michael Zuo, Inwon Kang and Stacy Patterson</p>
-                                            <a href="presentations/Trustworthy%20Agentic%20AI%20via%20Privacy-Preserving%20Synthetic%20Data.pdf" target="_blank" class="presentation-link">
-                                                <i class="bi bi-file-earmark-slides"></i> View presentation
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="agenda-item break-item">
-                                <div class="time-badge">12:30 - 14:00</div>
-                                <div class="agenda-content">
-                                    <h5>Lunch</h5>
-                                </div>
-                            </div>
-
-                            <div class="agenda-item">
-                                <div class="time-badge">14:00 - 15:30</div>
-                                <div class="agenda-content">
-                                    <h5>Panel</h5>
-                                    <p class="speaker-info"><i class="bi bi-people-fill"></i>Andreas Harth, Ruben Taelman, Paul Groth, Anna Lisa Gentile, and Beatriz Esteves</p>
-                                </div>
-                            </div>
-
-                            <div class="agenda-item break-item">
-                                <div class="time-badge">15:30 - 16:00</div>
-                                <div class="agenda-content">
-                                    <h5>Coffee Break</h5>
-                                </div>
-                            </div>
-
-                            <div class="agenda-item">
-                                <div class="time-badge">16:00 - 17:30</div>
-                                <div class="agenda-content">
-                                    <h5>Discussion</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="gallery" class="section-padding">
-            <div class="container">
-                <div class="section-title text-center">
-                    <h2>Event Highlights</h2>
-                </div>
-                <div class="event-gallery-grid">
-                    <a href="pictures/event/TAAPAAI26%20-%201.png" target="_blank" class="event-gallery-item">
-                        <img src="pictures/event/TAAPAAI26%20-%201.png" alt="TAAPAAI26 event photo 1">
-                    </a>
-                    <a href="pictures/event/TAAPAAI26%20-%202.png" target="_blank" class="event-gallery-item">
-                        <img src="pictures/event/TAAPAAI26%20-%202.png" alt="TAAPAAI26 event photo 2">
-                    </a>
-                    <a href="pictures/event/TAAPAAI26%20-%203.png" target="_blank" class="event-gallery-item">
-                        <img src="pictures/event/TAAPAAI26%20-%203.png" alt="TAAPAAI26 event photo 3">
-                    </a>
-                    <a href="pictures/event/TAAPAAI26%20-%204.png" target="_blank" class="event-gallery-item">
-                        <img src="pictures/event/TAAPAAI26%20-%204.png" alt="TAAPAAI26 event photo 4">
-                    </a>
-                    <a href="pictures/event/TAAPAAI26%20-%205.png" target="_blank" class="event-gallery-item">
-                        <img src="pictures/event/TAAPAAI26%20-%205.png" alt="TAAPAAI26 event photo 5">
-                    </a>
-                    <a href="pictures/event/TAAPAAI26%20-%206.png" target="_blank" class="event-gallery-item">
-                        <img src="pictures/event/TAAPAAI26%20-%206.png" alt="TAAPAAI26 event photo 6">
-                    </a>
-                    <a href="pictures/event/TAAPAAI26%20-%207.png" target="_blank" class="event-gallery-item">
-                        <img src="pictures/event/TAAPAAI26%20-%207.png" alt="TAAPAAI26 event photo 7">
-                    </a>
-                    <a href="pictures/event/TAAPAAI26%20-%208.png" target="_blank" class="event-gallery-item">
-                        <img src="pictures/event/TAAPAAI26%20-%208.png" alt="TAAPAAI26 event photo 8">
-                    </a>
-                    <a href="pictures/event/TAAPAAI26%20-%209.png" target="_blank" class="event-gallery-item">
-                        <img src="pictures/event/TAAPAAI26%20-%209.png" alt="TAAPAAI26 event photo 9">
-                    </a>
-                    <a href="pictures/event/TAAPAAI26%20-%2010.png" target="_blank" class="event-gallery-item">
-                        <img src="pictures/event/TAAPAAI26%20-%2010.png" alt="TAAPAAI26 event photo 10">
-                    </a>
-                    <a href="pictures/event/TAAPAAI26%20-%2011.png" target="_blank" class="event-gallery-item">
-                        <img src="pictures/event/TAAPAAI26%20-%2011.png" alt="TAAPAAI26 event photo 11">
-                    </a>
-                    <a href="pictures/event/TAAPAAI26%20-%2012.png" target="_blank" class="event-gallery-item">
-                        <img src="pictures/event/TAAPAAI26%20-%2012.png" alt="TAAPAAI26 event photo 12">
-                    </a>
-                    <a href="pictures/event/TAAPAAI26%20-%2013.png" target="_blank" class="event-gallery-item">
-                        <img src="pictures/event/TAAPAAI26%20-%2013.png" alt="TAAPAAI26 event photo 13">
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section id="chairs" class="section-padding">
-            <div class="container">
-                <div class="section-title text-center">
-                    <h2>Organizing Committee</h2>
+                <div class="section-title text-center reveal">
+                    <div class="section-kicker">Chairs</div>
+                    <h2 class="section-heading">Organizing Committee</h2>
                 </div>
                 <div class="row g-4 justify-content-center">
-                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                        <div class="card chair-card w-100 text-center">
+                    <div class="col-lg-3 col-md-6 d-flex">
+                        <article class="card chair-card w-100 text-center">
                             <div class="card-body d-flex flex-column">
                                 <img src="https://kmi.open.ac.uk/images/people/medium/john-domingue.png" class="rounded-circle mx-auto shadow" alt="John Domingue">
                                 <h4 class="card-title mt-4 mb-1">John Domingue</h4>
                                 <p class="text-muted">The Open University, UK</p>
-                                <p class="card-text small flex-grow-1">John Domingue holds the position of Professor of Computer Science, at the Knowledge Media Institute (KMi), the Open University's technology research and innovation centre. He also serves as the chair of the <a href="https://2026.eswc-conferences.org/" target="_blank">ESWC</a> conference series Steering Committee and is a member of SWSA. With a career including serving as KMi Director from 2015 to 2022, Prof. Domingue has contributed 250 refereed articles in fields such as semantics, AI, the Web, distributed ledgers, and eLearning. 
-                                    <!-- From 2017 to 2021, he led the first of five themes, on University Learners, for the £40M Institute of Coding, an initiative aimed at increasing the number and diversity of computing graduates in the UK while strengthening the connection between university teaching and corporate training. Since the beginning of 2023, he has been at the forefront of examining the impact of Generative AI on higher education including a UKRI funded project (SAGE-RAI) with the Open Data Institute. John has delivered numerous talks on his work, including appearances at the Royal Institution in 2018, TEDx, and featured in THE Campus on interdisciplinary research teams. In 2019, he was inducted as a Fellow of the British Blockchain Association, and in 2020, he became an Honorary Professor at Amity University. -->
-                                </p>
+                                <p class="card-text small flex-grow-1">Professor at the Knowledge Media Institute (KMi), with extensive experience in semantic web technologies and knowledge graphs. He co-led the Dagstuhl Seminar on Trust and Accountability in KG-based AI.</p>
                                 <div class="chair-links mt-3">
                                     <a href="mailto:john.domingue@open.ac.uk" title="Email"><i class="bi bi-envelope-fill"></i></a>
-                                    <a href="https://kmi.open.ac.uk/people/member/john-domingue" target="_blank" title="Homepage"><i class="bi bi-link-45deg"></i></a>
+                                    <a href="https://profiles.open.ac.uk/john-domingue" target="_blank" rel="noopener" title="Homepage"><i class="bi bi-link-45deg"></i></a>
                                 </div>
                             </div>
-                        </div>
+                        </article>
                     </div>
-                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                        <div class="card chair-card w-100 text-center">
-                             <div class="card-body d-flex flex-column">
-                                <img src="https://aidanhogan.com/img/me-sp.png" class="rounded-circle mx-auto shadow" alt="Aidan Hogan">
-                                <h4 class="card-title mt-4 mb-1">Aidan Hogan</h4>
-                                <p class="text-muted">University of Chile</p>
-                                <p class="card-text small flex-grow-1">Aidan Hogan is an Associate Professor and Director of the Department of Computer Science, University of Chile, and an Associate Researcher and Subdirector of the Millennium Institute for Foundational Research on Data (IMFD). Aidan’s research interests relate primarily to the Semantic Web, Graph Databases, Knowledge Graphs, Information Extraction and Reasoning; he has published over one hundred peer-reviewed works on these topics.</p>
+                    <div class="col-lg-3 col-md-6 d-flex">
+                        <article class="card chair-card w-100 text-center">
+                            <div class="card-body d-flex flex-column">
+                                <img src="pictures/organizers/Annalisa.png" class="rounded-circle mx-auto shadow" alt="Annalisa Gentile">
+                                <h4 class="card-title mt-4 mb-1">Annalisa Gentile</h4>
+                                <p class="text-muted">IBM Research, USA</p>
+                                <p class="card-text small flex-grow-1">Senior Research Scientist at IBM Research in Silicon Valley, working on knowledge graphs, AI systems, and enterprise applications. She served as General Chair of ISWC 2025.</p>
                                 <div class="chair-links mt-3">
-                                    <a href="mailto:ahogan@dcc.uchile.cl" title="Email"><i class="bi bi-envelope-fill"></i></a>
-                                    <a href="https://aidanhogan.com/" target="_blank" title="Homepage"><i class="bi bi-link-45deg"></i></a>
+                                    <a href="mailto:annalisa.gentile@ibm.com" title="Email"><i class="bi bi-envelope-fill"></i></a>
+                                    <a href="https://research.ibm.com/people/anna-lisa-gentile" target="_blank" rel="noopener" title="Homepage"><i class="bi bi-link-45deg"></i></a>
                                 </div>
                             </div>
-                        </div>
+                        </article>
                     </div>
-                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                        <div class="card chair-card w-100 text-center">
-                             <div class="card-body d-flex flex-column">
+                    <div class="col-lg-3 col-md-6 d-flex">
+                        <article class="card chair-card w-100 text-center">
+                            <div class="card-body d-flex flex-column">
                                 <img src="pictures/organizers/Sabrina.jpeg" class="rounded-circle mx-auto shadow" alt="Sabrina Kirrane">
                                 <h4 class="card-title mt-4 mb-1">Sabrina Kirrane</h4>
-                                <p class="text-muted">Vienna University of Economics and Business, Austria</p>
-                                <p class="card-text small flex-grow-1">Sabrina Kirrane is an Associate Professor at the Vienna University of Economics and Business Institute for Complex Networks and a member of the Competence Center for Applied AI and Scientific Computing. Sabrina’s research interests include Security, Privacy, and Policy aspects of the Next Generation Internet (NGI), Distributed and Decentralised Systems, Big Data and Data Science, with a particular focus on policy representation and reasoning 
-                                    <!-- (e.g., access constraints, usage policies, regulatory obligations, societal norms, business processes) -->
-                                    , and the development of transparency and trust techniques.</p>
+                                <p class="text-muted">WU Vienna, Austria</p>
+                                <p class="card-text small flex-grow-1">Associate Professor at WU Vienna specializing in knowledge graphs, data governance, and policy-aware systems. She co-led the Dagstuhl Seminar on Trust and Accountability in KG-based AI.</p>
                                 <div class="chair-links mt-3">
                                     <a href="mailto:sabrina.kirrane@wu.ac.at" title="Email"><i class="bi bi-envelope-fill"></i></a>
-                                    <a href="https://research.wu.ac.at/en/persons/sabi-kirrane/" target="_blank" title="Homepage"><i class="bi bi-link-45deg"></i></a>
+                                    <a href="https://research.wu.ac.at/en/persons/sabi-kirrane/" target="_blank" rel="noopener" title="Homepage"><i class="bi bi-link-45deg"></i></a>
                                 </div>
                             </div>
-                        </div>
+                        </article>
                     </div>
-                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                        <div class="card chair-card w-100 text-center">
-                             <div class="card-body d-flex flex-column">
+                    <div class="col-lg-3 col-md-6 d-flex">
+                        <article class="card chair-card w-100 text-center">
+                            <div class="card-body d-flex flex-column">
                                 <img src="https://oshani.info/author/oshani-seneviratne/avatar_hu5383073719754426958.jpg" class="rounded-circle mx-auto shadow" alt="Oshani Seneviratne">
                                 <h4 class="card-title mt-4 mb-1">Oshani Seneviratne</h4>
                                 <p class="text-muted">Rensselaer Polytechnic Institute, USA</p>
-                                <p class="card-text small flex-grow-1">Oshani Seneviratne is an Assistant Professor of Computer Science at Rensselaer Polytechnic Institute, where she leads the BRAINS Lab (Bridging Resilient, Accountable, Intelligent Networked Systems). Her research focuses on decentralized systems, including web technologies, blockchain, and decentralized learning, with applications in health informatics and decentralized finance. More Information about Oshani can be found <a href="https://oshani.info" target="_blank">here</a>.</p>
+                                <p class="card-text small flex-grow-1">Assistant Professor at RPI whose research spans decentralized intelligent systems, personal knowledge graphs, and trustworthy AI. She has co-organized the previous TAAPAAI workshops.</p>
                                 <div class="chair-links mt-3">
                                     <a href="mailto:senevo@rpi.edu" title="Email"><i class="bi bi-envelope-fill"></i></a>
-                                    <a href="https://oshani.info" target="_blank" title="Homepage"><i class="bi bi-link-45deg"></i></a>
+                                    <a href="https://oshani.info" target="_blank" rel="noopener" title="Homepage"><i class="bi bi-link-45deg"></i></a>
                                 </div>
                             </div>
-                        </div>
+                        </article>
                     </div>
                 </div>
             </div>
         </section>
-
-        <section id="pc" class="section-padding bg-light">
-            <div class="container">
-                <div class="section-title text-center">
-                    <h2>Program Committee</h2>
-                </div>
-                <div class="row">
-                    <div class="col-lg-10 mx-auto">
-                        <div class="pc-list">
-                            <div class="pc-member">
-                                <strong>Remzi Çelebi</strong><br>
-                                <span class="text-muted">Maastricht University</span>
-                            </div>
-                            <div class="pc-member">
-                                <strong>Sebastián Ferrada</strong><br>
-                                <span class="text-muted">Universidad de Chile</span>
-                            </div>
-                            <div class="pc-member">
-                                <strong>Mark Grünsteidl</strong><br>
-                                <span class="text-muted">Institute for Complex Networks at WU</span>
-                            </div>
-                            <div class="pc-member">
-                                <strong>Olaf Hartig</strong><br>
-                                <span class="text-muted">Linköping University</span>
-                            </div>
-                            <div class="pc-member">
-                                <strong>Ernesto Jiménez-Ruiz</strong><br>
-                                <span class="text-muted">City St George's, University of London</span>
-                            </div>
-                            <div class="pc-member">
-                                <strong>Naeem Janjua</strong><br>
-                                <span class="text-muted">Computing and Mathematical Sciences, College of Science and Engineering Flinders University Adelaide, South Australia</span>
-                            </div>
-                            <div class="pc-member">
-                                <strong>Lalana Kagal</strong><br>
-                                <span class="text-muted">Massachusetts Institute of Technology</span>
-                            </div>
-                            <div class="pc-member">
-                                <strong>Deborah McGuinness</strong><br>
-                                <span class="text-muted">Rensselaer Polytechnic Institute (RPI)</span>
-                            </div>
-                            <div class="pc-member">
-                                <strong>Sebastian Neumaier</strong><br>
-                                <span class="text-muted">St. Pölten University of Applied Sciences, Austria</span>
-                            </div>
-                            <div class="pc-member">
-                                <strong>David Maria Schmidt</strong><br>
-                                <span class="text-muted">Semantic Computing Group, CITEC, Technical Faculty, Bielefeld University, Bielefeld, Germany</span>
-                            </div>
-                            <div class="pc-member">
-                                <strong>Daniel Schwabe</strong><br>
-                                <span class="text-muted">Dept. of Informatics, PUC-Rio</span>
-                            </div>
-                            <div class="pc-member">
-                                <strong>Wout Slabbinck</strong><br>
-                                <span class="text-muted">Ghent University - IDLab - imec</span>
-                            </div>
-                            <div class="pc-member">
-                                <strong>Fernando Spadea</strong><br>
-                                <span class="text-muted">RPI</span>
-                            </div>
-                            <div class="pc-member">
-                                <strong>Ruben Taelman</strong><br>
-                                <span class="text-muted">Ghent University – imec</span>
-                            </div>
-                            <div class="pc-member">
-                                <strong>Antoine Zimmermann</strong><br>
-                                <span class="text-muted">École des Mines de Saint-Étienne</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="sponsors" class="section-padding">
-            <div class="container">
-                <div class="section-title text-center">
-                    <h2>Sponsors</h2>
-                </div>
-                <div class="sponsors-list text-center">
-                    <a href="https://ceur-ws.org" target="_blank" class="sponsor-link">CEUR-WS.org</a>
-                </div>
-            </div>
-        </section>
-                
     </main>
 
-    <footer class="py-4 text-center">
+    <footer class="site-footer">
         <div class="container">
-            <p class="mb-2">© 2026 TAAPAAI Workshop Organizers. All Rights Reserved.</p>
-            <p class="mb-2">Contact: <a href="mailto:taapaai26@easychair.org">taapaai26@easychair.org</a></p>
-            <p><a href="#">Back to top</a></p>
+            <p class="footer-brand">TAAPAAI Barstuhl @ ISWC 2026</p>
+            <p>Towards Agendas for Advancing Personal Agentic Artificial Intelligence</p>
+            <p>Bari, Italy · 26 October 2026</p>
+            <p class="mb-2">Contact the chairs:
+                <a href="mailto:john.domingue@open.ac.uk">John</a> ·
+                <a href="mailto:annalisa.gentile@ibm.com">Annalisa</a> ·
+                <a href="mailto:sabrina.kirrane@wu.ac.at">Sabrina</a> ·
+                <a href="mailto:senevo@rpi.edu">Oshani</a>
+            </p>
+            <p class="mb-0"><a href="#">Back to top</a></p>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    
-    <script>
-        // Change navbar style on scroll
-        const navbar = document.getElementById('navbar');
-        if (navbar) {
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 50) {
-                    navbar.classList.add('navbar-scrolled');
-                } else {
-                    navbar.classList.remove('navbar-scrolled');
-                }
-            });
-        }
-        
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a.nav-link[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
-
