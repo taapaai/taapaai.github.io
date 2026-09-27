@@ -296,6 +296,16 @@ a:hover {
     flex-wrap: wrap;
 }
 
+.hero-deadline {
+    margin: 18px 0 0;
+    color: rgba(255, 255, 255, 0.88);
+    font-weight: 500;
+}
+
+.hero-deadline strong {
+    color: var(--gold);
+}
+
 .btn-terracotta {
     background: var(--terracotta);
     border: 1px solid var(--terracotta);
