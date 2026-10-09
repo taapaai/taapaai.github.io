@@ -788,6 +788,10 @@ section[id],
     color: var(--muted);
 }
 
+.provocation p + p {
+    margin-top: 10px;
+}
+
 .provocation.tba {
     border-left-color: var(--gold);
     opacity: 0.85;
