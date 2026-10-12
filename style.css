@@ -769,9 +769,31 @@ section[id],
 }
 
 .provocation .speaker-line {
-    color: var(--terracotta) !important;
-    font-weight: 600;
     margin-bottom: 10px !important;
+}
+
+.provocation .speaker-line a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--terracotta);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.provocation .speaker-line a:hover {
+    color: var(--terracotta-soft);
+    text-decoration: underline;
+}
+
+.provocation .speaker-line img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 8px rgba(14, 61, 94, 0.18);
 }
 
 .provocation p {
